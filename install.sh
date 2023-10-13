@@ -119,9 +119,9 @@ echo "-> download BOSWatch..................."
 cd $boswatchpath/
 
 case $branch in
-  "dev") git clone -b develop https://github.com/obi-amd64/BOSWatch . >> $boswatch_install_path/setup_log.txt 2>&1 && \
+  "dev") git clone -b develop https://github.com/Schrolli91/BOSWatch . >> $boswatch_install_path/setup_log.txt 2>&1 && \
     exitcodefunction $? git-clone BOSWatch-develop ;;
-  *) git clone -b master https://github.com/obi-amd64/BOSWatch . >> $boswatch_install_path/setup_log.txt 2>&1 && \
+  *) git clone -b master https://github.com/Schrolli91/BOSWatch . >> $boswatch_install_path/setup_log.txt 2>&1 && \
     exitcodefunction $? git-clone BOSWatch ;;
 esac
 
