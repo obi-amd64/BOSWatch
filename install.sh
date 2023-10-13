@@ -131,7 +131,7 @@ echo "[ 4/9] [####-----]"
 tput cup 15 5
 echo "-> download rtl_fm......................"
 cd $boswatch_install_path
-git clone https://github.com/Schrolli91/rtl-sdr.git >> $boswatch_install_path/setup_log.txt 2>&1
+git clone https://github.com/osmocom/rtl-sdr.git >> $boswatch_install_path/setup_log.txt 2>&1
 exitcodefunction $? git-clone rtl-sdr
 cd rtl-sdr/
 
