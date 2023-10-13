@@ -24,7 +24,7 @@ def checkConfig(section=""):
 	@exception: Exception if Error at read an debug
 	"""
 	try:
-		if section is not "": # read only data if section is given
+		if section != "": # read only data if section is given
 			logging.debug("read [%s] from config file", section)
 
 			for key,val in globalVars.config.items(section):
